@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding JavaScript to HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        function myFunction(){
+            document.getElementById("sample")
+                    .innerHTML = "Changed from a function in the head section."
+        }
+    </script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Adding JavaScript to HTML</h1>
+    </header>
+    <main>
+        <button type="button" onclick="myFunction()">
+            Call Function in Head Section
+        </button>
+        <button type="button" onclick="myFunction2()">
+            Call Function in External Script
+        </button>
+
+        <p id="start"></p>
+        <script>
+            document.getElementById("start").innerHTML = "JS inside the script tag."
+        </script>
+        <p id="sample">
+            This paragraph has an ID of sample
+        </p>
+        <button type="button"
+                onclick='document.getElementById("sample").innerHTML = "Daniel"'>
+                Click Here
+        </button>
+        <button type="button"
+                onclick='document.getElementById("sample").style.fontSize = "30px"'>
+                Bigger
+        </button>
+        <div class="buttons">
+            <button onclick='document.getElementById("pet").src = "images/dog.jpg"'>
+                Dog
+            </button>
+            <button onclick='document.getElementById("pet").src = "images/cat.jpg"'>
+                Cat
+            </button>
+        </div>
+
+        <img src="images/dog.jpg" alt="animal" id="pet" class="center">
+        <div class="buttons">
+            <button onclick='document.getElementById("pet")
+                                     .style.display = "block"'>Show</button>
+            <button onclick='document.getElementById("pet")
+                                     .style.display = "none"'>Hide</button>
+        </div>
+
+        <div id="output">
+            <h2>Output</h2>
+            <script>
+                document.write("document.write")
+            </script>
+
+            <p id="Whoops"></p>
+            <button onclick='document.write("Whoops")'>
+                Whoops
+            </button>
+
+            <script>
+                alert("This is an alert.")
+            </script>
+            <script>
+                console.log("This is a log message.");
+            </script>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Daniel Georgas</p>
+    </footer>
+</body>
+
+</html>
