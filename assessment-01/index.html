@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="scripts/script.js"></script>
+    <script>
+        function addTextFromHeadSection(){
+            document.getElementById("text").innerHTML = "Adding text from head section."
+            document.getElementById("text").style.color = "black"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Assessment 1</h1>
+
+    <p>
+        <img src="images/image1.png" id="image"
+             alt="image" style="width:250px;height:200px;">
+    </p>
+    
+    <div class="buttons">
+        <button onclick="image1()">
+            Image 1
+        </button>
+        <button onclick="image2()">
+            Image 2
+        </button>
+        <button onclick="image3()">
+            Image 3
+        </button>
+    </div>
+
+    <p id="text">
+        <script>
+            document.getElementById("text").innerHTML = "Adding text from body section."
+        </script>
+    </p>
+
+    <div class="buttons">
+        <button onclick="addTextFromExternalScript()">
+            Add Text From External Script
+        </button>
+        <button onclick="addTextFromHeadSection()">
+            Add Text From Head Section
+        </button>
+    </div>
+
+    <p id="styling"></p>
+    <div class="buttons">
+        <button onclick="imageWidth()">
+            Change Image Width
+        </button>
+        <button onclick="textColor()">
+            Change Text Color
+        </button>
+    </div>
+
+    <p id="imageControl"></p>
+    <div class="buttons">
+        <button onclick="showImage()">
+            Show Image
+        </button>
+        <button onclick="hideImage()">
+            Hide Image
+        </button>
+    </div>
+</body>
+</html>
