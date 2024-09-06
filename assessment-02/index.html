@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript With Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/calculate.js"></script>
+</head>
+
+<body onload="addDate()">
+
+    <header>
+        <h1>Place An Order</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="top">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fname"><br>
+                <p id="today"></p>
+                <p>&nbsp;</p>
+                <p id="myDate"></p>
+            </div>
+
+            <div class="item" id="sandwich">
+                <h3>Sandwiches</h3>
+                <label for="club">Turkey & Avocado Club - $9</label>
+                <select id="clubs" name="clubs">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <label for="sub">Italian Sub - $8</label>
+                <select id="subs" name="subs">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+
+                <label for="panini">Grilled Chicken Pesto Panini - $9</label>
+                <select id="paninis" name="paninis">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <label for="pork">BBQ Pulled Pork - $9</label>
+                <select id="porks" name="porks">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+
+                <label for="sandwich">Caprese Sandwich - $7</label>
+                <select id="sandwiches" name="sandwiches">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="item" id="side">
+                <h3>Sides</h3>
+                <label for="fries">Sweet Potato Fries - $3</label>
+                <select id="fries" name="fries">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                
+                <label for="slaw">Coleslaw - $2.50</label>
+                <select id="slaws" name="slaws">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+                
+                <label for="pSalad">Potato Salad - $3</label>
+                <select id="pSalads" name="pSalads">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+
+                <label for="fSalad">Fruit Salad - $3.50</label>
+                <select id="fSalads" name="fSalads">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+
+                <label for="guacamole">Chips and Guacamole - $4</label>
+                <select id="guacamoles" name="guacamoles">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="item" id="drink">
+                <h3>Drinks</h3>
+                <label for="tea">Iced Green Tea - $2.50</label>
+                <select id="teas" name="teas">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+                
+                <label for="coffee">Cold Brew Coffee - $3.50</label>
+                <select id="coffees" name="coffees">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <label for="lemonade">Lemonade - $2.50</label>
+                <select id="lemonades" name="lemonades">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+                
+                <label for="palmer">Arnold Palmer - $3</label>
+                <select id="palmers" name="palmers">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+
+                <label for="water">Sparkling Water - $1.50</label>
+                <select id="waters" name="waters">
+                    <option value="0">-------</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="bottom">
+                <button type="button" onclick="estimate()">Place Order!</button>
+                <h3>Order:</h3>
+                <p id="estimate"></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
