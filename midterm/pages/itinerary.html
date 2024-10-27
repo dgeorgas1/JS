@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/scripts.js"></script>
+    <link rel="icon" href="../images/itinerary.png" type="image/png">
+</head>
+<body onload="loadItinerary()">
+    <header>
+        <h1>Itinerary</h1>
+    </header>
+
+    <main>
+        <form>
+            <div class="top">
+                <label for="activity">What Would You Like To Do?</label>
+                <input type="text" id="activity" name="activity" autofocus>
+                <input type="date" id="activityDate" /><br>
+                <button type="button" onclick="addActivity()">Add</button>
+            </div>
+        </form>
+
+        <div class="schedule">
+            <h3>Trip Schedule</h3>
+            <p>Add or Remove Activities For Your Trip</p>
+        </div>
+
+        <div class="activities"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trip Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

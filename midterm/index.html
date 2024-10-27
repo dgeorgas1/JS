@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body onload="loadIndex()">
+    <header>
+        <h1>Trip Planner</h1>
+    </header>
+
+    <main>
+        <form>
+            <div class="top">
+                <label for="destin">Where Would You Like To Go?</label>
+                <input type="text" id="destination" name="destin" autofocus><br>
+                <button type="button" onclick="setDestination()">Submit</button>
+            </div>
+        </form>
+
+        <div class="plan">
+            <h3 id="setDestination"><br></h3>
+            <p id="directions">Enter A Destination To Get Started</p>
+        </div>
+
+        <div class="image-container">
+            <a href="pages/itinerary.html">
+                <img id="itinerary" src="images/itinerary.png" alt="Itinerary">
+            </a>
+            <a href="pages/calculator.html">
+                <img id="calculator" src="images/calculator.png" alt="Calculator">
+            </a>
+            <a href="pages/map.html">
+                <img id="map" src="images/map.png" alt="Map">
+            </a>
+            <a href="pages/weather.html">
+                <img id="weather" src="images/weather.png" alt="Weather">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trip Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

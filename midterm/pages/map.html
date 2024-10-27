@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/map.png" type="image/png">
+    <script src="../scripts/scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjTIC-8eUPbkllv_jLs1ZNCHnnz2NbjKM&callback=initMap&libraries=places"></script>
+
+</head>
+<body onload="loadMap()">
+    <header>
+        <h1>Map</h1>
+    </header>
+
+    <main>
+        <div class="top">
+            <h3 id="setDestination"><br></h3>
+        </div>
+
+        <div class="map"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trip Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>

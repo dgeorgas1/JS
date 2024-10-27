@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/scripts.js"></script>
+    <link rel="icon" href="../images/calculator.png" type="image/png">
+</head>
+<body onload="loadBudget()">
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main>
+        <form>
+            <div class="top">
+                <label for="budget">What Is Your Budget?</label>
+                <input type="text" id="budget" name="budget" autofocus><br>
+                <button type="button" onclick="setBudget()">Submit</button>
+            </div>
+        </form>
+
+        <div class="budgetHeader">
+            <h3>Budget Planner</h3>
+            <p>Enter and Review Your Travel Expenses</p>
+        </div>
+        
+        <div class="budget"></div>
+
+        <div class="budgetFootter">
+            <p id="setBudget"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trip Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
