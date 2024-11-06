@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Assessment</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#left").click(function(){
+                $("#image").animate({left: '-=300px'});
+            });
+            $("#right").click(function(){
+                $("#image").animate({left: '+=300px'});
+            });
+            $("#up").click(function(){
+                $("#image").animate({top: '-=150px'});
+            });
+            $("#down").click(function(){
+                $("#image").animate({top: '+=150px'});
+            });
+            $("#stop").click(function(){
+                $("#image").stop();
+            });
+            $("#fade").click(function(){
+                $("#image").fadeOut(3000, function(){
+                    alert("The image is now hidden");
+                });
+            });
+            $("#move").click(function(){
+                $("#image")
+                .animate({left: '-=300px'}, 1000)
+                .animate({left: '+=300px'}, 1000);
+            });
+      });
+    </script>
+</head>
+<body>
+    <header class="container">
+        <h1>JQuery - Assessment</h1>
+    </header>
+
+    <main class="container">
+        <img id="image" src="images/jquery.png" alt="JQuery Icon"><br>
+    </main>
+
+    <footer>
+        <div class="buttons-container">
+            <button id="left">Left</button>
+            <button id="right">Right</button>
+            <button id="up">Up</button>
+            <button id="down">Down</button>
+            <button id="fade">Fade</button>
+            <button id="stop">Stop</button>
+            <button id="move">Move</button>
+        </div>
+    </footer>
+</body>
+</html>
