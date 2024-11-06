@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#hideDiv").click(function(){
+          $("#myDiv").slideUp();
+          $("#image").fadeOut(3000);
+          $("#hideDiv").hide();
+        });
+        $("#showDiv").click(function(){
+          $("#myDiv").slideDown();
+          $("#image").fadeIn(3000);
+          $("#hideDiv").show();
+        });
+      });
+    </script>
+</head>
+<body>
+    <header class="container">
+        <h1>JQuery - Effects</h1>
+    </header>
+
+    <main class="container">
+        <div id="myDiv">Div</div>
+        <img id="image" src="images/jquery.png" alt="JQuery Icon"><br>
+        <button id="hideDiv">Hide Div</button>
+        <button id="showDiv">Show Div</button>
+    </main>
+</body>
+</html>
