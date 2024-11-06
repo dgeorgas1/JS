@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Getting Started</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#hideParagraphs").click(function(){
+          $("p").hide();
+        });
+        $("#hideDiv").click(function(){
+          $("#myDiv").hide();
+        });
+        $("h2").click(function(){
+            $(this).hide();
+        });
+      });
+    </script>
+</head>
+<body>
+    <header class="container">
+        <h1>JQuery - Getting Started</h1>
+    </header>
+
+    <main class="container">
+        <p id="p1">Paragraph 1</p>
+        <p id="p2">Paragraph 2</p>
+        <p id="p3">Paragraph 3</p>
+        <button id="hideParagraphs">Hide Paragraphs</button>
+
+        <div id="myDiv">Div</div>
+        <button id="hideDiv">Hide Div</button>
+
+        <h2>Header 1</h2>
+        <h2>Header 2</h2>
+    </main>
+</body>
+</html>
