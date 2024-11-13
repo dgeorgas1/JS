@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - HTML</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnGet").click(function(){
+                $("p").append($("#field1").val() + ", " + $("#field2").val() + 
+                ", " + $("#field3").val() + ", " + $("#field4").val() + ", " + 
+                $("#field5").val());
+                $("#field1").val("");
+                $("#field2").val("");
+                $("#field3").val("");
+                $("#field4").val("");
+                $("#field5").val("");
+            });
+            $("#btnLight").click(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+            });
+            $("#btnDark").click(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+            });
+            $("#btnLarger").click(function(){
+                $("p").css("font-size", function(index, currentValue){
+                    var currentSize = parseInt(currentValue, 10);
+                    return (currentSize + 1) + "px";
+                });
+            });
+            $("#btnSmaller").click(function(){
+                $("p").css("font-size", function(index, currentValue){
+                    var currentSize = parseInt(currentValue, 10);
+                    return (currentSize - 1) + "px";
+                });
+            });
+      });
+    </script>
+</head>
+<body>
+    <header class="container">
+        <h1>JQuery - HTML</h1>
+    </header>
+
+    <main class="container">
+        <form>
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" width: 20 /> <br/>
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" width: 20 /> <br/>
+            <label for="field3">Field 3:</label>
+            <input type="text" id="field3" width: 20 /> <br/>
+            <label for="field4">Field 4:</label>
+            <input type="text" id="field4" width: 20 /> <br/>
+            <label for="field5">Field 5:</label>
+            <input type="text" id="field5" width: 20 /> <br/>
+
+            <button type="button" id="btnGet">Get Text</button> <br/>
+
+            <button type="button" id="btnLight">Light Page</button>
+            <button type="button" id="btnDark">Dark Page</button> <br/>
+
+            <button type="button" id="btnLarger">Larger Font</button>
+            <button type="button" id="btnSmaller">Smaller Font</button>
+        </form>
+
+        <p></p>
+    </main>
+</body>
+</html>
