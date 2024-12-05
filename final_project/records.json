@@ -1,0 +1,32 @@
+[
+    {
+        "name": "King of Queens",
+        "main_character": "Doug Heffernan",
+        "network": "CBS",
+        "start_date": "September 21, 1998"
+    },
+    {
+        "name": "Big Bang Theory",
+        "main_character": "Sheldon Cooper",
+        "network": "CBS",
+        "start_date": "September 24, 2007"
+    },
+    {
+        "name": "Hawaii Five-0",
+        "main_character": "Steve McGarrett",
+        "network": "CBS",
+        "start_date": "September 20, 2010"
+    },
+    {
+        "name": "Seinfeld",
+        "main_character": "Jerry Seinfeld",
+        "network": "NBC",
+        "start_date": "July 5, 1989"
+    },
+    {
+        "name": "Bull",
+        "main_character": "Dr. Jason Bull",
+        "network": "CBS",
+        "start_date": "September 20, 2016"
+    }
+]

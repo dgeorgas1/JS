@@ -1,0 +1,2 @@
+<h2>Welcome to the AJAX Section</h2>
+<p>This content was loaded dynamically using jQuery AJAX from a text file.</p>

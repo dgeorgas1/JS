@@ -1,0 +1,109 @@
+/* Resetting some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the main header */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the description text */
+p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Container for the TV show cards */
+#tv-shows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Individual TV show card styling */
+.tv-show {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the TV show cards */
+.tv-show:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling for the TV show name (header) */
+.tv-show h3 {
+    color: #2a2a2a;
+    font-size: 1.5em;
+}
+
+/* Styling for the details below the TV show name */
+.tv-show p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Styling for the animated div */
+#jquery-section {
+    position: relative; /* Important: position the animated div relative to this section */
+    height: 300px; /* Ensure there's space for the animation */
+}
+
+#animated-div {
+    position: absolute;
+    left: -400px; /* Position off-screen to the left */
+    top: 30%; /* Center vertically */
+    width: 350px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* jQuery2 Section Styling */
+#jquery2-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#load-content-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-content-btn:hover {
+    background-color: #45a049;
+}
+
+#content-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
